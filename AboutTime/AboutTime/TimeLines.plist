@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Event1</key>
+	<dict>
+		<key>eventName</key>
+		<string>Superman&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Superman</string>
+		<key>year</key>
+		<integer>1938</integer>
+	</dict>
+	<key>Event2</key>
+	<dict>
+		<key>eventName</key>
+		<string>Iron Man&apos;s birthday</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Tony_Stark_(Marvel_Cinematic_Universe) </string>
+		<key>year</key>
+		<integer>1970</integer>
+	</dict>
+	<key>Event3</key>
+	<dict>
+		<key>eventName</key>
+		<string>Captian America&apos;s birthday</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Steve_Rogers_(Marvel_Cinematic_Universe)</string>
+		<key>year</key>
+		<integer>1918</integer>
+	</dict>
+	<key>Event4</key>
+	<dict>
+		<key>eventName</key>
+		<string>Vision&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Vision_(Marvel_Comics) </string>
+		<key>year</key>
+		<integer>1968</integer>
+	</dict>
+	<key>Event5</key>
+	<dict>
+		<key>eventName</key>
+		<string>Groot&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Groot </string>
+		<key>year</key>
+		<integer>1960</integer>
+	</dict>
+	<key>Event6</key>
+	<dict>
+		<key>eventName</key>
+		<string>Spider Man&apos;s birthday</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Spider-Man:_Homecoming </string>
+		<key>year</key>
+		<integer>2003</integer>
+	</dict>
+	<key>Event7</key>
+	<dict>
+		<key>eventName</key>
+		<string>Gamora&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Gamora</string>
+		<key>year</key>
+		<integer>1975</integer>
+	</dict>
+	<key>Event8</key>
+	<dict>
+		<key>eventName</key>
+		<string>Scarlet Witch&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Scarlet_Witch </string>
+		<key>year</key>
+		<integer>1964</integer>
+	</dict>
+	<key>Event9</key>
+	<dict>
+		<key>eventName</key>
+		<string>Ant-Man&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Ant-Man </string>
+		<key>year</key>
+		<integer>1962</integer>
+	</dict>
+	<key>Event10</key>
+	<dict>
+		<key>eventName</key>
+		<string>Star Lord&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Star-Lord</string>
+		<key>year</key>
+		<integer>1976</integer>
+	</dict>
+	<key>Event11</key>
+	<dict>
+		<key>eventName</key>
+		<string>Doctor Strange&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Doctor_Strange </string>
+		<key>year</key>
+		<integer>1963</integer>
+	</dict>
+	<key>Event12</key>
+	<dict>
+		<key>eventName</key>
+		<string>Nebula&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Nebula_(comics) </string>
+		<key>year</key>
+		<integer>1985</integer>
+	</dict>
+	<key>Event13</key>
+	<dict>
+		<key>eventName</key>
+		<string>Mantis&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Mantis_(Marvel_Comics)</string>
+		<key>year</key>
+		<integer>1973</integer>
+	</dict>
+	<key>Event14</key>
+	<dict>
+		<key>eventName</key>
+		<string>War Machine&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/War_Machine </string>
+		<key>year</key>
+		<integer>1979</integer>
+	</dict>
+	<key>Event15</key>
+	<dict>
+		<key>eventName</key>
+		<string>Nick Fury&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Nick_Fury#Early_life_and_wartime</string>
+		<key>year</key>
+		<integer>1916</integer>
+	</dict>
+	<key>Event16</key>
+	<dict>
+		<key>eventName</key>
+		<string>The Hulk&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Hulk_(film)</string>
+		<key>year</key>
+		<integer>1961</integer>
+	</dict>
+	<key>Event17</key>
+	<dict>
+		<key>eventName</key>
+		<string>Hawkeye&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Hawkeye_(comics)</string>
+		<key>year</key>
+		<integer>1965</integer>
+	</dict>
+	<key>Event18</key>
+	<dict>
+		<key>eventName</key>
+		<string>Black Panther&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Black_Panther_(comics)</string>
+		<key>year</key>
+		<integer>1966</integer>
+	</dict>
+	<key>Event19</key>
+	<dict>
+		<key>eventName</key>
+		<string>Falcon&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Falcon_(comics)</string>
+		<key>year</key>
+		<integer>1969</integer>
+	</dict>
+	<key>Event20</key>
+	<dict>
+		<key>eventName</key>
+		<string>Maria Hill&apos;s birthday</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Maria_Hill </string>
+		<key>year</key>
+		<integer>2005</integer>
+	</dict>
+	<key>Event21</key>
+	<dict>
+		<key>eventName</key>
+		<string>Bucky&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Bucky_(Marvel_Comics)</string>
+		<key>year</key>
+		<integer>1953</integer>
+	</dict>
+	<key>Event22</key>
+	<dict>
+		<key>eventName</key>
+		<string>Green Lantern&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Green_Lantern</string>
+		<key>year</key>
+		<integer>1971</integer>
+	</dict>
+	<key>Event23</key>
+	<dict>
+		<key>eventName</key>
+		<string>Flash&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Flash_(comics) </string>
+		<key>year</key>
+		<integer>1940</integer>
+	</dict>
+	<key>Event24</key>
+	<dict>
+		<key>eventName</key>
+		<string>Wonder Woman&apos;s first appearance</string>
+		<key>site</key>
+		<string> https://en.wikipedia.org/wiki/Wonder_Woman</string>
+		<key>year</key>
+		<integer>1941</integer>
+	</dict>
+	<key>Event25</key>
+	<dict>
+		<key>eventName</key>
+		<string>Wolverine&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Wolverine_(comic_book)</string>
+		<key>year</key>
+		<integer>1982</integer>
+	</dict>
+	<key>Event26</key>
+	<dict>
+		<key>eventName</key>
+		<string>Cyclops&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Cyclops_(Marvel_Comics)</string>
+		<key>year</key>
+		<integer>1963</integer>
+	</dict>
+	<key>Event27</key>
+	<dict>
+		<key>eventName</key>
+		<string>Ice Man&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Iceman_(Marvel_Comics)#1602</string>
+		<key>year</key>
+		<integer>1902</integer>
+	</dict>
+	<key>Event28</key>
+	<dict>
+		<key>eventName</key>
+		<string>Mimic&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Mimic_(comics)</string>
+		<key>year</key>
+		<integer>1966</integer>
+	</dict>
+	<key>Event29</key>
+	<dict>
+		<key>eventName</key>
+		<string>Changeling&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Kevin_Sydney</string>
+		<key>year</key>
+		<integer>1967</integer>
+	</dict>
+	<key>Event30</key>
+	<dict>
+		<key>eventName</key>
+		<string>Polaris&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Polaris_(comics)</string>
+		<key>year</key>
+		<integer>1968</integer>
+	</dict>
+	<key>Event31</key>
+	<dict>
+		<key>eventName</key>
+		<string>Havok&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Havok_(comics)</string>
+		<key>year</key>
+		<integer>1969</integer>
+	</dict>
+	<key>Event32</key>
+	<dict>
+		<key>eventName</key>
+		<string>Lockheed&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Lockheed_(comics)</string>
+		<key>year</key>
+		<integer>1983</integer>
+	</dict>
+	<key>Event33</key>
+	<dict>
+		<key>eventName</key>
+		<string>Rogue&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Rogue_(comics)</string>
+		<key>year</key>
+		<integer>1981</integer>
+	</dict>
+	<key>Event34</key>
+	<dict>
+		<key>eventName</key>
+		<string>Lucas Bishop&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Bishop_(comics)</string>
+		<key>year</key>
+		<integer>1991</integer>
+	</dict>
+	<key>Event35</key>
+	<dict>
+		<key>eventName</key>
+		<string>Gambit&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Gambit_(comics)</string>
+		<key>year</key>
+		<integer>1990</integer>
+	</dict>
+	<key>Event36</key>
+	<dict>
+		<key>eventName</key>
+		<string>Cable&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Cable_(comics)</string>
+		<key>year</key>
+		<integer>1986</integer>
+	</dict>
+	<key>Event37</key>
+	<dict>
+		<key>eventName</key>
+		<string>Chamber&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Chamber_(comics)</string>
+		<key>year</key>
+		<integer>1994</integer>
+	</dict>
+	<key>Event38</key>
+	<dict>
+		<key>eventName</key>
+		<string>Xorn&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Xorn</string>
+		<key>year</key>
+		<integer>2001</integer>
+	</dict>
+	<key>Event39</key>
+	<dict>
+		<key>eventName</key>
+		<string>Mystique&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Mystique_(comics)</string>
+		<key>year</key>
+		<integer>1978</integer>
+	</dict>
+	<key>Event40</key>
+	<dict>
+		<key>eventName</key>
+		<string>Karima Shapandar&apos;s first appearance</string>
+		<key>site</key>
+		<string>https://en.wikipedia.org/wiki/Karima_Shapandar</string>
+		<key>year</key>
+		<integer>2000</integer>
+	</dict>
+</dict>
+</plist>

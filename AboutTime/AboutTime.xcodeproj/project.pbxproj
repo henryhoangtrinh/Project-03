@@ -13,6 +13,10 @@
 		7535FD7422C3ED7900C3014D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7535FD7322C3ED7900C3014D /* Assets.xcassets */; };
 		7535FD7722C3ED7900C3014D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7535FD7522C3ED7900C3014D /* LaunchScreen.storyboard */; };
 		7535FD7F22C3EE2600C3014D /* BoutTimeAssets in Resources */ = {isa = PBXBuildFile; fileRef = 7535FD7E22C3EE2600C3014D /* BoutTimeAssets */; };
+		7535FD8122C41DFC00C3014D /* QuestionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FD8022C41DFC00C3014D /* QuestionObject.swift */; };
+		7535FD8322C4201D00C3014D /* TimeLines.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7535FD8222C4201D00C3014D /* TimeLines.plist */; };
+		7535FD8522C42B9C00C3014D /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FD8422C42B9C00C3014D /* EventsManager.swift */; };
+		7535FD8722C4668400C3014D /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FD8622C4668400C3014D /* EndGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7535FD7622C3ED7900C3014D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7535FD7822C3ED7900C3014D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7535FD7E22C3EE2600C3014D /* BoutTimeAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BoutTimeAssets; sourceTree = "<group>"; };
+		7535FD8022C41DFC00C3014D /* QuestionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionObject.swift; sourceTree = "<group>"; };
+		7535FD8222C4201D00C3014D /* TimeLines.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TimeLines.plist; sourceTree = "<group>"; };
+		7535FD8422C42B9C00C3014D /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
+		7535FD8622C4668400C3014D /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				7535FD7E22C3EE2600C3014D /* BoutTimeAssets */,
 				7535FD7522C3ED7900C3014D /* LaunchScreen.storyboard */,
 				7535FD7822C3ED7900C3014D /* Info.plist */,
+				7535FD8222C4201D00C3014D /* TimeLines.plist */,
+				7535FD8022C41DFC00C3014D /* QuestionObject.swift */,
+				7535FD8422C42B9C00C3014D /* EventsManager.swift */,
+				7535FD8622C4668400C3014D /* EndGameViewController.swift */,
 			);
 			path = AboutTime;
 			sourceTree = "<group>";
@@ -129,6 +141,7 @@
 				7535FD7422C3ED7900C3014D /* Assets.xcassets in Resources */,
 				7535FD7F22C3EE2600C3014D /* BoutTimeAssets in Resources */,
 				7535FD7222C3ED7800C3014D /* Main.storyboard in Resources */,
+				7535FD8322C4201D00C3014D /* TimeLines.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +154,9 @@
 			files = (
 				7535FD6F22C3ED7800C3014D /* ViewController.swift in Sources */,
 				7535FD6D22C3ED7800C3014D /* AppDelegate.swift in Sources */,
+				7535FD8722C4668400C3014D /* EndGameViewController.swift in Sources */,
+				7535FD8522C42B9C00C3014D /* EventsManager.swift in Sources */,
+				7535FD8122C41DFC00C3014D /* QuestionObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
