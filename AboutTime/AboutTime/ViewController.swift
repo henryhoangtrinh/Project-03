@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var upButton4: UIButton!
     @IBOutlet weak var CheckButton: UIButton!
     
+    @IBOutlet weak var wikiSite1: UIButton!
+    @IBOutlet weak var wikiSite2: UIButton!
+    @IBOutlet weak var wikiSite3: UIButton!
+    @IBOutlet weak var wikiSite4: UIButton!
+    
     // Declare all Labels
     @IBOutlet weak var Question1: UILabel!
     @IBOutlet weak var Question2: UILabel!
@@ -32,37 +37,31 @@ class ViewController: UIViewController {
     // Declare all Variables
     let eventTimeLine : EventsManager
     var allEvents : [QuestionObject] = []
-    var isTesting = true
+    var isTesting = false // True for display the year (which is ez for testing) , set false to let the apps  go as it suppose to
     var currentRound = 0
     var currentSite : String = ""
     var timer = Timer()
     var seconds = 60
+    var myGameSound = SoundManager()
     
-    //load the plist
+    //MARK: load the plist
     required init?(coder aDecoder: NSCoder) {
         do {
             let dictionary = try PlistConverter.dictionary(fromFile: "TimeLines", ofType: "plist")
             let events = try EventsUnarchinver.selectEvents(fromDictionary: dictionary)
-            //print(events)
             self.eventTimeLine = EventsManager(events: events)
-            //print(events)
         } catch let error {
             fatalError("\(error)")
         }
-        
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-        setCountdown()
         start()
-    //showWikiButton(inUse: true)
-    
     }
-
+    // MARK : Basic function for the apps
     func displayQuestion() {
         if isTesting {
             Question1.text = "\(allEvents[0].eventTitle) \n \(allEvents[0].year)"
@@ -81,50 +80,43 @@ class ViewController: UIViewController {
 }
 
     func start() {
+        showWikiButton(inUse: false)
+        myGameSound.loadGameStartSound()
+        myGameSound.playGameSound()
         allEvents = eventTimeLine.randomEvents()
         ScoreLabel.text = "\(eventTimeLine.correctedAnswer) | \(currentRound)"
         eventTimeLine.NumberOfRound += 1
         currentRound += 1
-        print(allEvents[0])
-        print(allEvents[1])
-        print(allEvents[2])
-        print(allEvents[3])
         displayQuestion()
         disableButtons(isUse: false)
         shakeLabel.text = "Shake to complete"
-        //setCountdown()
+        setCountdown()
     }
 
     func nextRound() {
+        print(eventTimeLine.NumberOfRound)
+        print(eventTimeLine.NumberOfTotalRound)
         if eventTimeLine.NumberOfRound < eventTimeLine.NumberOfTotalRound {
-            timeReset()
+            timeReset(at: 60)
             start()
-           // showWikiButton(inUse: false)
         } else {
-            eventTimeLine.NumberOfRound = 0
-            performSegue(withIdentifier: "EndGame", sender: nil)
             shakeLabel.text = "Shake to complete"
-            //timer.invalidate()
-            eventTimeLine.correctedAnswer = 0
-            currentRound = 0
-            restartNewRound()
-            timeReset()
+            performSegue(withIdentifier: "EndGame", sender: nil)
         }
     }
-
+    // MARK : check answer base on the provided file
     func checkAnswer() {
-        if (allEvents[0].year <= allEvents[1].year && allEvents[1].year <= allEvents[2].year && allEvents[2].year <= allEvents[3].year) {
-        
+        if (allEvents[0].year <= allEvents[1].year &&
+            allEvents[1].year <= allEvents[2].year &&
+            allEvents[2].year <= allEvents[3].year) {
             showCorrect()
             disableButtons(isUse: true)
         } else {
-           disableButtons(isUse: true)
+            disableButtons(isUse: true)
             showWrong()
         }
-    
-    
     }
-    
+    // MARK : Activate the Shake Gesture features
     override func becomeFirstResponder() -> Bool {
         return true
     }
@@ -135,42 +127,40 @@ class ViewController: UIViewController {
             checkAnswer()
         }
     }
-    
-    func restartNewRound() {
-        
-        
-        start()
-        //showWikiButton(inUse: false)
-    }
-    
+    // MARK : show the wikisite and buttons
     func showWikiButton(inUse use : Bool) {
-        if use {
-            print(use)
-           // wikiButton1.isHidden = false
-          //  wikiButton1.isHidden = false
-          //  wikiButton1.isHidden = false
-          //  wikiButton1.isHidden = false
+        if use { // TRUE when we want to show the wikibuttonSite -wiki should .isHidden = false
+                 // should .isEnabled = true to make the buttons work
+                 // and Questions need to be .isHidden = true ( not show )
+            wikiSite1.isHidden = false
+            wikiSite2.isHidden = false
+            wikiSite3.isHidden = false
+            wikiSite4.isHidden = false
             
-           // wikiButton1.isEnabled = true
-           // wikiButton2.isEnabled = true
-          // wikiButton3.isEnabled = true
-          //  wikiButton4.isEnabled = true
+            wikiSite1.isEnabled = true
+            wikiSite2.isEnabled = true
+            wikiSite3.isEnabled = true
+            wikiSite4.isEnabled = true
+            
+            wikiSite1.setTitle(allEvents[0].eventTitle, for: .normal)
+            wikiSite2.setTitle(allEvents[1].eventTitle, for: .normal)
+            wikiSite3.setTitle(allEvents[2].eventTitle, for: .normal)
+            wikiSite4.setTitle(allEvents[3].eventTitle, for: .normal)
             
             Question1.isHidden = true
             Question2.isHidden = true
             Question3.isHidden = true
             Question4.isHidden = true
-        } else  {
-            print(use)
-         //   wikiButton1.isHidden = true
-          //  wikiButton1.isHidden = true
-         //   wikiButton1.isHidden = true
-         //   wikiButton1.isHidden = true
+        } else  { // otherwise
+            wikiSite1.isHidden = true
+            wikiSite2.isHidden = true
+            wikiSite3.isHidden = true
+            wikiSite4.isHidden = true
             
-         //   wikiButton1.isEnabled = false
-         //   wikiButton2.isEnabled = false
-        //    wikiButton3.isEnabled = false
-         //   wikiButton4.isEnabled = false
+            wikiSite1.isEnabled = false
+            wikiSite2.isEnabled = false
+            wikiSite3.isEnabled = false
+            wikiSite4.isEnabled = false
             
             Question1.isHidden = false
             Question2.isHidden = false
@@ -187,7 +177,7 @@ class ViewController: UIViewController {
             upButton3.isEnabled = false
             downButton3.isEnabled = false
             upButton4.isEnabled = false
-
+            
         } else {
             downButton1.isEnabled = true
             upButton2.isEnabled = true
@@ -195,33 +185,68 @@ class ViewController: UIViewController {
             upButton3.isEnabled = true
             downButton3.isEnabled = true
             upButton4.isEnabled = true
-
         }
     }
-    
-    
+    // MARK : decide to show correctness
     func showCorrect() {
-        //sound
-        //time
+        myGameSound.loadCorrectSound()
+        myGameSound.playGameSound()
+        timer.invalidate()
         TimeLabel.isHidden = true
         CheckButton.setImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
         CheckButton.isHidden = false
         eventTimeLine.correctedAnswer += 1
         shakeLabel.text = "Tap events to learn more"
-       // showWikiButton(inUse: true)
-        //nextRound()
+        showWikiButton(inUse: true)
     }
     
     func showWrong() {
-        //sound
-        //time
+        myGameSound.loadIncorrectSound()
+        myGameSound.playGameSound()
+        timer.invalidate()
         TimeLabel.isHidden = true
         CheckButton.setImage(#imageLiteral(resourceName: "next_round_fail"), for: .normal)
         CheckButton.isHidden = false
         shakeLabel.text = "Tap events to learn more"
-        //showWikiButton(inUse: true)
-        //nextRound()
+        showWikiButton(inUse: true)
     }
+    
+  
+    
+    //Mark : Segue for End Game VC & Wikisite VC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //print(segue.identifier)
+        if segue.identifier == "EndGame" {
+            let EndGameVC = segue.destination as? EndGameViewController
+            EndGameVC?.currentScore = eventTimeLine.correctedAnswer
+            EndGameVC?.TotalRound = currentRound
+        } else if segue.identifier == "goToWiki1" {
+            let navigationVC = segue.destination as? UINavigationController
+            let wikiSiteVC1 = navigationVC?.topViewController as? WebViewViewController
+            wikiSiteVC1?.wikiSite = allEvents[0].site
+        } else if segue.identifier == "goToWiki2" {
+            let navigationVC = segue.destination as? UINavigationController
+            let wikiSiteVC1 = navigationVC?.topViewController as? WebViewViewController
+            wikiSiteVC1?.wikiSite = allEvents[1].site
+        } else if segue.identifier == "goToWiki3" {
+            let navigationVC = segue.destination as? UINavigationController
+            let wikiSiteVC1 = navigationVC?.topViewController as? WebViewViewController
+            wikiSiteVC1?.wikiSite = allEvents[2].site
+        } else if segue.identifier == "goToWiki4" {
+            let navigationVC = segue.destination as? UINavigationController
+            let wikiSiteVC1 = navigationVC?.topViewController as? WebViewViewController
+            wikiSiteVC1?.wikiSite = allEvents[3].site
+        }
+    }
+    
+    @IBAction func unwindToVC (_ sender: UIStoryboardSegue){
+        eventTimeLine.NumberOfRound = 0
+        eventTimeLine.correctedAnswer = 0
+        currentRound = 0
+        nextRound()
+        print("START HERE NOW")
+    }
+    //Mark : Time set up
     
     func setCountdown() {
         TimeLabel.text = "00:\(seconds)"
@@ -238,26 +263,16 @@ class ViewController: UIViewController {
         }
     }
     
-    //Mark : Segue for End Game VC & Wikisite VC
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "EndGame" {
-            let EndGameVC = segue.destination as? EndGameViewController
-            EndGameVC?.currentScore = eventTimeLine.correctedAnswer
-            EndGameVC?.TotalRound = currentRound
-        }
-    }
-    
-    func timeReset() {
+    func timeReset(at second: Int) {
         timer.invalidate()
-        seconds = 60
-        setCountdown()
+        seconds = second
+        //setCountdown()
     }
     
     //Mark : Action's buttons
     @IBAction func downButton1Swapped(_ sender: UIButton) {
         allEvents.swapAt(0, 1)
         displayQuestion()
-        
     }
     
     @IBAction func upButton2Swapped(_ sender: UIButton) {
@@ -290,6 +305,43 @@ class ViewController: UIViewController {
         nextRound()
     }
     
+    @IBAction func showWikiSite1(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToWiki1", sender: nil)
+    }
     
+    @IBAction func showWikiSite2(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToWiki2", sender: nil)
+    }
+    @IBAction func showWikiSite3(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToWiki3", sender: nil)
+    }
+    @IBAction func showWikiSite4(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToWiki4", sender: nil)
+    }
+    
+    
+    @IBAction func downButton1Pressed(_ sender: UIButton) {
+        downButton1.setImage(#imageLiteral(resourceName: "down_full_selected"), for: .highlighted )
+    }
+    
+    @IBAction func upButton2Pressed(_ sender: UIButton) {
+        upButton2.setImage(#imageLiteral(resourceName: "up_half_selected"), for: .highlighted )
+    }
+    
+    @IBAction func upButton3Pressed(_ sender: UIButton) {
+        upButton3.setImage(#imageLiteral(resourceName: "up_half_selected"), for: .highlighted )
+    }
+    
+    @IBAction func downButton2Pressed(_ sender: UIButton) {
+        downButton2.setImage(#imageLiteral(resourceName: "down_half_selected"), for: .highlighted )
+    }
+    @IBAction func downButton3Pressed(_ sender: UIButton) {
+        downButton3.setImage(#imageLiteral(resourceName: "down_half_selected"), for: .highlighted )
+    }
+    @IBAction func upButton4Pressed(_ sender: UIButton) {
+        upButton4.setImage(#imageLiteral(resourceName: "up_full_selected"), for: .highlighted )
+    }
+        
 }
+
 

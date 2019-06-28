@@ -16,7 +16,7 @@
 		<key>eventName</key>
 		<string>Iron Man&apos;s birthday</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Tony_Stark_(Marvel_Cinematic_Universe) </string>
+		<string>https://marvel-movies.fandom.com/wiki/Anthony_Stark</string>
 		<key>year</key>
 		<integer>1970</integer>
 	</dict>
@@ -34,7 +34,7 @@
 		<key>eventName</key>
 		<string>Vision&apos;s first appearance</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Vision_(Marvel_Comics) </string>
+		<string>https://marvel-movies.fandom.com/wiki/Vision_(The_Avengers%3A_United_They_Stand)</string>
 		<key>year</key>
 		<integer>1968</integer>
 	</dict>
@@ -43,7 +43,7 @@
 		<key>eventName</key>
 		<string>Groot&apos;s first appearance</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Groot </string>
+		<string>https://marvel-movies.fandom.com/wiki/Groot</string>
 		<key>year</key>
 		<integer>1960</integer>
 	</dict>
@@ -52,7 +52,7 @@
 		<key>eventName</key>
 		<string>Spider Man&apos;s birthday</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Spider-Man:_Homecoming </string>
+		<string>https://marvel-movies.fandom.com/wiki/Spider-Man%3A_Homecoming</string>
 		<key>year</key>
 		<integer>2003</integer>
 	</dict>
@@ -70,7 +70,7 @@
 		<key>eventName</key>
 		<string>Scarlet Witch&apos;s first appearance</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Scarlet_Witch </string>
+		<string>https://marvel-movies.fandom.com/wiki/Wanda_Maximoff</string>
 		<key>year</key>
 		<integer>1964</integer>
 	</dict>
@@ -79,7 +79,7 @@
 		<key>eventName</key>
 		<string>Ant-Man&apos;s first appearance</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Ant-Man </string>
+		<string>https://marvel-movies.fandom.com/wiki/Ant-Man_(film)</string>
 		<key>year</key>
 		<integer>1962</integer>
 	</dict>
@@ -97,7 +97,7 @@
 		<key>eventName</key>
 		<string>Doctor Strange&apos;s first appearance</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Doctor_Strange </string>
+		<string>https://marvel-movies.fandom.com/wiki/Doctor_Strange_(film)</string>
 		<key>year</key>
 		<integer>1963</integer>
 	</dict>
@@ -106,7 +106,7 @@
 		<key>eventName</key>
 		<string>Nebula&apos;s first appearance</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Nebula_(comics) </string>
+		<string>https://marvel-movies.fandom.com/wiki/Nebula</string>
 		<key>year</key>
 		<integer>1985</integer>
 	</dict>
@@ -124,7 +124,7 @@
 		<key>eventName</key>
 		<string>War Machine&apos;s first appearance</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/War_Machine </string>
+		<string>https://marvel-movies.fandom.com/wiki/War_Machine_armor_(Mark_I)</string>
 		<key>year</key>
 		<integer>1979</integer>
 	</dict>
@@ -178,9 +178,9 @@
 		<key>eventName</key>
 		<string>Maria Hill&apos;s birthday</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Maria_Hill </string>
+		<string>https://marvel-movies.fandom.com/wiki/Maria_Hill</string>
 		<key>year</key>
-		<integer>2005</integer>
+		<integer>1982</integer>
 	</dict>
 	<key>Event21</key>
 	<dict>
@@ -205,7 +205,7 @@
 		<key>eventName</key>
 		<string>Flash&apos;s first appearance</string>
 		<key>site</key>
-		<string>https://en.wikipedia.org/wiki/Flash_(comics) </string>
+		<string>https://en.wikipedia.org/wiki/Flash_(Barry_Allen)</string>
 		<key>year</key>
 		<integer>1940</integer>
 	</dict>
@@ -214,9 +214,9 @@
 		<key>eventName</key>
 		<string>Wonder Woman&apos;s first appearance</string>
 		<key>site</key>
-		<string> https://en.wikipedia.org/wiki/Wonder_Woman</string>
+		<string>https://www.cbsnews.com/pictures/wonder-woman-through-the-years/2/</string>
 		<key>year</key>
-		<integer>1941</integer>
+		<real>1940</real>
 	</dict>
 	<key>Event25</key>
 	<dict>

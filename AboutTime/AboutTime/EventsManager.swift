@@ -44,6 +44,7 @@ class EventsManager : Events {
             shuffleQuestions = GKRandomSource.sharedRandom().nextInt(upperBound: self.events.count)
         }
         
+        randomNumberGenerated.append(shuffleQuestions)
         return shuffleQuestions
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7530F94822C55598004C1B95 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530F94722C55598004C1B95 /* WebViewViewController.swift */; };
+		7530F94A22C56F3F004C1B95 /* webview_bar 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7530F94922C56F3F004C1B95 /* webview_bar 2.png */; };
 		7535FD6D22C3ED7800C3014D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FD6C22C3ED7800C3014D /* AppDelegate.swift */; };
 		7535FD6F22C3ED7800C3014D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FD6E22C3ED7800C3014D /* ViewController.swift */; };
 		7535FD7222C3ED7800C3014D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7535FD7022C3ED7800C3014D /* Main.storyboard */; };
@@ -17,9 +19,15 @@
 		7535FD8322C4201D00C3014D /* TimeLines.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7535FD8222C4201D00C3014D /* TimeLines.plist */; };
 		7535FD8522C42B9C00C3014D /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FD8422C42B9C00C3014D /* EventsManager.swift */; };
 		7535FD8722C4668400C3014D /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FD8622C4668400C3014D /* EndGameViewController.swift */; };
+		7569211922C5AD1B00CFB516 /* SoundManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7569211822C5AD1B00CFB516 /* SoundManagers.swift */; };
+		7569211D22C5ADF400CFB516 /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7569211A22C5ADF400CFB516 /* GameSound.wav */; };
+		7569211E22C5ADF400CFB516 /* IncorrectBuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7569211B22C5ADF400CFB516 /* IncorrectBuzz.wav */; };
+		7569211F22C5ADF400CFB516 /* CorrectDing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7569211C22C5ADF400CFB516 /* CorrectDing.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7530F94722C55598004C1B95 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		7530F94922C56F3F004C1B95 /* webview_bar 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "webview_bar 2.png"; path = "BoutTimeAssets/webview_bar 2.png"; sourceTree = "<group>"; };
 		7535FD6922C3ED7800C3014D /* AboutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7535FD6C22C3ED7800C3014D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7535FD6E22C3ED7800C3014D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +40,10 @@
 		7535FD8222C4201D00C3014D /* TimeLines.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TimeLines.plist; sourceTree = "<group>"; };
 		7535FD8422C42B9C00C3014D /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
 		7535FD8622C4668400C3014D /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		7569211822C5AD1B00CFB516 /* SoundManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManagers.swift; sourceTree = "<group>"; };
+		7569211A22C5ADF400CFB516 /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
+		7569211B22C5ADF400CFB516 /* IncorrectBuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = IncorrectBuzz.wav; sourceTree = "<group>"; };
+		7569211C22C5ADF400CFB516 /* CorrectDing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CorrectDing.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +78,21 @@
 			children = (
 				7535FD6C22C3ED7800C3014D /* AppDelegate.swift */,
 				7535FD6E22C3ED7800C3014D /* ViewController.swift */,
-				7535FD7022C3ED7800C3014D /* Main.storyboard */,
 				7535FD7322C3ED7900C3014D /* Assets.xcassets */,
 				7535FD7E22C3EE2600C3014D /* BoutTimeAssets */,
 				7535FD7522C3ED7900C3014D /* LaunchScreen.storyboard */,
+				7535FD7022C3ED7800C3014D /* Main.storyboard */,
+				7530F94922C56F3F004C1B95 /* webview_bar 2.png */,
 				7535FD7822C3ED7900C3014D /* Info.plist */,
 				7535FD8222C4201D00C3014D /* TimeLines.plist */,
 				7535FD8022C41DFC00C3014D /* QuestionObject.swift */,
 				7535FD8422C42B9C00C3014D /* EventsManager.swift */,
 				7535FD8622C4668400C3014D /* EndGameViewController.swift */,
+				7530F94722C55598004C1B95 /* WebViewViewController.swift */,
+				7569211822C5AD1B00CFB516 /* SoundManagers.swift */,
+				7569211C22C5ADF400CFB516 /* CorrectDing.wav */,
+				7569211A22C5ADF400CFB516 /* GameSound.wav */,
+				7569211B22C5ADF400CFB516 /* IncorrectBuzz.wav */,
 			);
 			path = AboutTime;
 			sourceTree = "<group>";
@@ -138,8 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7535FD7722C3ED7900C3014D /* LaunchScreen.storyboard in Resources */,
+				7569211E22C5ADF400CFB516 /* IncorrectBuzz.wav in Resources */,
+				7569211D22C5ADF400CFB516 /* GameSound.wav in Resources */,
 				7535FD7422C3ED7900C3014D /* Assets.xcassets in Resources */,
+				7569211F22C5ADF400CFB516 /* CorrectDing.wav in Resources */,
 				7535FD7F22C3EE2600C3014D /* BoutTimeAssets in Resources */,
+				7530F94A22C56F3F004C1B95 /* webview_bar 2.png in Resources */,
 				7535FD7222C3ED7800C3014D /* Main.storyboard in Resources */,
 				7535FD8322C4201D00C3014D /* TimeLines.plist in Resources */,
 			);
@@ -153,9 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7535FD6F22C3ED7800C3014D /* ViewController.swift in Sources */,
+				7569211922C5AD1B00CFB516 /* SoundManagers.swift in Sources */,
 				7535FD6D22C3ED7800C3014D /* AppDelegate.swift in Sources */,
 				7535FD8722C4668400C3014D /* EndGameViewController.swift in Sources */,
 				7535FD8522C42B9C00C3014D /* EventsManager.swift in Sources */,
+				7530F94822C55598004C1B95 /* WebViewViewController.swift in Sources */,
 				7535FD8122C41DFC00C3014D /* QuestionObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
